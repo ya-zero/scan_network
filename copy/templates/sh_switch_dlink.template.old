@@ -1,0 +1,21 @@
+#DES-3010G
+Value Model (\S+)
+Value Mac (\S+)
+Value Boot (\S+)
+Value Software (\S+)
+Value Hardware (\S+)
+
+Start
+  ^.*Device.*: ${Model}
+  ^.*MAC.*: ${Mac}
+  ^.*Boot.*: \S+ ${Boot}
+  ^.*Firmware.*: \S+ ${Software}
+  ^.*Hardware.*: ${Hardware} -> Record
+
+
+#Device Type        : DES-3010G Fast Ethernet Switch
+#MAC Address        : 00-22-B0-63-43-30
+#Boot PROM Version  : Build 1.01.009
+#Firmware Version   : Build 4.20.B27
+#Hardware Version   : A3
+

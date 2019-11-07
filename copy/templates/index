@@ -1,0 +1,3 @@
+Template, Hostname, Vendor, Command
+sh_switch_dlink.template, .*, cisco_like, sh[[ow]] sw[[itch]]
+sh_version_snr.template, .*, cisco_like, sh[[ow]] ver[[sion]]

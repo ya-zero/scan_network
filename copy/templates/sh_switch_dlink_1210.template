@@ -1,0 +1,20 @@
+#DES-1210
+Value Model (\S+)
+Value Mac (\S+)
+Value Boot (\S+)
+Value Software (\S+)
+Value Serial (\S+)
+Value Hardware (\S+)
+
+
+Start
+  ^.*Device.*: ${Model}
+  ^.*MAC.*: ${Mac}
+  ^.*Boot.*: ${Boot}
+  ^.*Firmware.*: ${Software}
+  ^.*Hardware.*: ${Hardware}
+  ^.*Serial.*: ${Serial} -> Record
+
+#System Hardware Version           : B2
+#System Serial Number              : QBM51DA004240
+#важна очередность
